@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Brimma Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>  
+</head>
+
+<body>
+    <div class="navbar">
+    <img style="margin-left: 60;" src="images/logo.svg" class="logo">
+    <nav>
+        <ul id="menulist">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html"target="_blank">Contact</a></li>
+            <li><a href="Why Brimma.html"target="_blank">Why Brimma</a></li>
+            <li><a href="Features.html"target="_blank">Features</a></li>
+        </ul>
+    </nav>
+    <img src="images/menu.png" class="menu" onclick="togglemenu()">
+    </div>
+
+    <div class="row">
+        <div class="col1">
+            <h2>Our Tribe Culture<br>Welcomes you!</h2><br>
+            <p>Welcome to our community!</p><br>
+            <button onclick="location.href='http://localhost:3000';" class="chat-button">Chat with us</button>
+        </div>
+        
+        <div class="col2">
+            <img src="images/us.png" class="picture">
+            <div class="colorbox"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container{
+    width: 100;
+    min-width: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.menu{
+    cursor: pointer;
+    size: 1em;
+    padding-right: 1cm;
+    width:20px;
+    height:20px;
+    display: none;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: orange;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 120px;
+}
+
+.col1::after{
+    content: '';
+    width: 5px;
+    height: 68%;
+    background-color: rgb(233, 133, 47);
+    position: absolute;
+    left: -18px;
+    top: 8px;
+}
+.col1 h2{
+    font-size: 40px;
+
+}
+
+.col1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 60;
+    margin: 20px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chat-button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: rgb(233, 133, 47);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.chat-button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+}
+
+.col2 .picture{
+    width: 70%;
+    margin-left: 6%;
+}
+
+.colorbox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient( rgb(175, 216, 29), rgb(96, 118, 18));
+    border-radius: 40px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translate(-160px);
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: orange;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu{
+        display: block ;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+        transform: translate(-50px);
+    }
+    .col2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col2 .picture{
+        width: 70%;
+        transform: translate(100px);
+    }
+    .colorbox{
+        transform: translate(-10px);
+    }
+    .col1{
+        flex-basis: 100%;
+    }
+    .col1 h2{
+        font-size: 35px;
+    }
+    .col1 h3{
+        font-size: 35px;
+    }
+
+}
+
